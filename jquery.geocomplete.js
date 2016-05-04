@@ -551,6 +551,13 @@
         // Use the input text if it already gives geometry.
         this.update(place);
       }
+    },
+
+    // Set new bounds and update map and geocode
+    setBounds: function(bounds){
+      this.options.bounds = bounds;
+      this.initGeocoder();
+      this.initMap();
     }
   });
 

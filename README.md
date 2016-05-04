@@ -182,6 +182,10 @@ $("input").geocomplete("find", "NYC");
 // Get the map and set a new zoom level.
 var map = $("input").geocomplete("map");
 map.setZoom(3);
+
+// Set new bounds
+$("input").geocomplete("setBounds",bounds);
+//Where bounds is a [LatLngBounds](https://developers.google.com/maps/documentation/javascript/3.exp/reference#LatLngBounds) object from google map library
 ```
 
 ## Address and Places Specific Component Types
